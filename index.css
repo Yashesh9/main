@@ -1,0 +1,709 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Laila', sans-serif;
+       font-family: 'Poppins', sans-serif; */
+    color: #fff;
+
+}
+
+
+h1,
+p,
+h3 {
+    cursor: default;
+}
+
+body {
+    background-color: #081b29;
+    width: 100%;
+
+}
+
+.ative {
+    color: aqua;
+}
+
+
+header {
+    min-height: 10vh;
+
+}
+
+.inf {
+    padding-bottom: 20px;
+}
+
+.topnav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    background-color: #081b29;
+    min-height: 13vh;
+    box-shadow: 0 0 20px #00070b;
+    z-index: 1;
+}
+
+.topnav h1 {
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+.topnav ul {
+    display: flex;
+    width: 40%;
+
+    margin: auto;
+
+    justify-content: flex-end;
+    justify-content: space-around;
+}
+
+ul li {
+    list-style-type: none;
+    position: relative;
+
+
+}
+
+ul li a {
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 22px;
+
+}
+
+
+ul li a::after {
+    content: ' ';
+    background-color: aqua;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.active::after {
+    width: 100%
+}
+
+ul li a:hover,
+.active {
+    color: aqua;
+}
+
+ul li a:hover::after {
+    width: 100%;
+
+}
+
+.sec1 {
+
+    height: 80vh;
+    margin: auto;
+
+    /*ackground-image: url(fotor_2023-6-17_1_9_0-removebg-preview.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #081b29;
+    margin-top: 0px;
+    padding-top: 0px;
+    opacity: 0.1*/
+
+}
+
+.sec1:hover {
+    background-color: linear-gradient rgba(25, 25, 25, 0.5);
+}
+
+.coin {
+    width: 40%;
+    height: 45vh;
+    justify-content: center;
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.coin h1 {
+    font-size: 33px;
+}
+
+.coin h3 {
+    margin-bottom: 40px;
+    color: aqua;
+    font-size: 25px;
+}
+
+.info p {
+    margin-bottom: 25px;
+    word-spacing: 3px;
+}
+
+.divbtn {
+    width: 300px;
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+
+.divbtn a {
+    position: relative;
+    width: 140px;
+    height: 50px;
+    text-decoration: none;
+    padding: 2px 15px;
+
+    display: flex;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.divbtn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: aqua;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.divbtn a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: aqua;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.divbtn a:nth-child(2)::before,
+.divbtn a:nth-child(2)::after {}
+
+.divbtn a:hover::before,
+.divbtn a:hover::after {
+    width: 50%;
+    transition-delay: 0s;
+}
+
+.divbtn a span {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    transition: 0.5s;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.divbtn a span:nth-child(1) {
+    transition-delay: 0.75s;
+}
+
+.divbtn a span:nth-child(2) {
+    transform: scale(3);
+    opacity: 0;
+    color: #111;
+    transition-delay: 0s;
+}
+
+.divbtn a:hover span:nth-child(1) {
+    transform: scale(0);
+    transition-delay: 0s;
+
+}
+
+.divbtn a:hover span:nth-child(2) {
+    transform: scale(1);
+    transition-delay: 0s;
+    opacity: 1;
+    transition-delay: 0.5s;
+
+    z-index: 10;
+
+}
+
+.ion {
+    margin-left: 100px;
+    display: inline-flex;
+    justify-content: space-between;
+
+
+
+}
+
+.ion a {
+    margin: 0px 15px;
+    height: 30px;
+    width: 30px;
+
+
+}
+
+.ion a i {
+    color: #fff;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.ion a:hover i {
+    color: aqua;
+
+}
+
+.sec2 {
+    display: flex;
+    margin: 40px 40px;
+}
+
+.sec2 h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0;
+
+}
+
+.divimg {
+    width: 40%;
+    height: 78vh;
+    overflow: hidden;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+.divimg img {
+    max-width: 100%;
+
+
+}
+
+.about {
+    margin: 5px 50px;
+    width: 60%;
+}
+
+.coin2 {}
+
+.coin2 nav {
+    margin: 30px 0px;
+    height: 15%;
+    border: solid aqua;
+    width: 100%;
+}
+
+.about nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.about nav ul li {
+    margin: 20px auto;
+    height: 100%;
+}
+
+.about nav ul li a {
+    text-decoration: none;
+}
+
+.lin {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+
+}
+
+.link {
+    position: relative;
+    margin: auto;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.link::after {
+    content: ' ';
+    background-color: aqua;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: 0.3s;
+
+
+}
+
+.link:hover::after {
+    width: 100%;
+
+}
+
+.link:hover {
+    color: aqua;
+}
+
+.activelink::after {
+
+    content: ' ';
+    background-color: aqua;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+}
+
+.activelink {
+    color: aqua;
+}
+
+.tab {
+    border: solid 2px aqua;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: 10px;
+    display: none;
+}
+
+.tab span {
+    color: aqua;
+    font-size: 20px;
+
+}
+
+.tab li {
+    padding-bottom: 15px;
+}
+
+.activetab {
+    display: block;
+}
+
+.sec3 {
+    padding: 15px;
+    padding-bottom: 100px;
+
+}
+
+.sec3 .serh1 {
+    margin: 30px 35px;
+    font-size: 34px;
+}
+
+.services {
+    min-height: 50vh;
+    display: flex;
+
+}
+
+.service {
+    width: 30%;
+    display: block;
+    margin: auto;
+    background-color: rgba(25, 25, 25, 0.86);
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: static;
+    transition: 0.3s;
+
+}
+
+.service i {
+    font-size: 40px;
+    margin: 20px 0px;
+    color: white;
+}
+
+.info2 h1 {
+    margin: 10px 0px;
+
+}
+
+.info2 p {
+    color: white;
+}
+
+.info2 a {
+    display: block;
+    color: aqua;
+    margin: 15px 5px;
+
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    background-color: aqua;
+
+}
+
+.service:hover .info2 h1 {
+    color: black;
+}
+
+.service:hover .info2 p {
+    color: black;
+}
+
+.service:hover .ilogo i {
+    color: black;
+}
+
+.service:hover a {
+    color: white;
+}
+
+.sec4 {
+    display: flex;
+    padding: 30px;
+}
+
+.info3 {
+    width: 50%;
+    text-align: center;
+}
+
+.info3 h2 {
+    font-size: 32px;
+    padding: 20px;
+}
+
+.coin4 {
+    display: flex;
+    padding: 20px 40px;
+}
+
+.info3 i {
+    font-size: 25px;
+    padding: 30px;
+    transition: 0.3s;
+
+}
+
+.info3 i:hover {
+    color: aqua;
+}
+
+.coin4 i {
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+.comment {
+    width: 50%;
+}
+
+.comment form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.sub {
+    background-color: #fff;
+    padding: 5px 15px;
+    border: none;
+    color: #262626;
+    transition: 0.3s;
+}
+
+.sub:hover {
+    background-color: aqua;
+}
+
+footer {
+    height: 12vh;
+    text-align: center;
+    border-top: solid 2px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 15px;
+    height: 100%;
+    padding: 20px;
+
+}
+
+.wrap {
+    display: inline-flex;
+}
+
+.static-txt {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.dynamic-txt {
+    margin-left: 15px;
+    overflow: hidden;
+
+    height: 55px;
+
+}
+
+.dynamic-txt li {
+    list-style: none;
+    font-size: 40px;
+    position: relative;
+    top: 0;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-timing-function: steps(5);
+    animation-iteration-count: infinite;
+
+    animation-delay: 1.5s;
+}
+
+.dynamic-txt li span {
+    position: relative;
+}
+
+.dynamic-txt li span::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #081b29;
+    border-left: 2px solid;
+    left: 0;
+    animation-name: typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(17);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1.5s;
+
+}
+
+@keyframes slide {
+    100% {
+        top: -305px;
+    }
+
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -20px 0 20px;
+
+    }
+
+}
+
+
+
+
+
+
+
+/*.wrap{
+    display: inline-flex;
+}
+.static-txt{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+.dynamic-txt{
+    margin-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.dynamic-txt li{
+    list-style: none;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+.dynamic-txt li span{
+    position: relative;
+    top: 0;
+}
+.dynamic-txt li span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    widows: 100%;
+    border-left: solid 2px;
+    animation: typing 1.5s steps(16) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        
+    }
+    
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}*/
+
+
+
+
+
+
+
+
+
+/* let sec = document.querySelectorAll('section');
+let links = document.querySelectorAll('nav a');
+
+window.onscroll = () {
+    => {
+        sec.forEach(section => {
+            let top = window.scrollY;
+            let offset = selection.offsetTop;
+            let height = section.offsetHeight;
+            let id = section.getAttribute('id');
+
+            if (top >= offset && top < offset + height) {
+                links.forEach(Link => {
+                    link.classList.remove('active');
+                    document.querySelector('nav a[href*=' + id + ']').classList.add('active');
+                })
+            }
+        })
+    }
+}
+ */
